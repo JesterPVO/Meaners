@@ -25,7 +25,7 @@ jobs:
 
     - name: Sync Template Files
       env:
-        REPO_URL: 'https://github.com/king-tri-ton/pythonpagelink.git'
+        REPO_URL: 'https://github.com/jesterpvo/Meaners'
       run: |
         git clone "$REPO_URL" temp-clone
         rsync -av --ignore-existing temp-clone/ .
